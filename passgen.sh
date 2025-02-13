@@ -17,5 +17,6 @@ then
     exit 2;
 fi
 
-echo $output | pbcopy
+# copy to clipboard, strip newlines
+echo $output | tr -d '\n' | pbcopy
 echo "✅ New password copied to clipboard"

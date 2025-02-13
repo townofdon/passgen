@@ -55,7 +55,7 @@ function main() {
   try {
     processArgs();
     const pass = generate();
-    console.log(pass);
+    process.stdout.write(pass);
   } catch (err) {
     printRed(err.message);
     process.exit(1);
