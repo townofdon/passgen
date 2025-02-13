@@ -19,7 +19,7 @@ Options:
 
 ## Alias
 
-To add a helpful alias to run this from anywhere, add the following to your `.bashprofile` or `.zprofile`:
+To alias this command, add the following to your `.bashprofile` or `.zprofile`:
 
 ```
 alias passgen="/absolute/path/to/passgen.sh $@"
