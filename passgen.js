@@ -40,8 +40,9 @@ function generate() {
   while (output.length < options.length) {
     const char = getNextChar();
     if (!char) throw new Error('got an undefined char');
-    if (char === lastChar && !options.allowRepeats) break;
+    if (char === lastChar && !options.allowRepeats) continue;
     output = output + char;
+    lastChar = char;
   }
   return output;
 }
